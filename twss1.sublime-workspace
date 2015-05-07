@@ -1,0 +1,979 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"html",
+				"html5	Simple HTML5 Boilerplate"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"新增",
+				"新增行"
+			],
+			[
+				"rep",
+				"response"
+			],
+			[
+				"sub",
+				"Sub"
+			],
+			[
+				"getgd",
+				"getGdsApigetPnrInfo"
+			],
+			[
+				"FunDispla",
+				"FunDisplayPnrChangeAirline"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"vwor",
+				"vWor00_sts"
+			],
+			[
+				"vordr",
+				"vOrdr_ordr"
+			],
+			[
+				"vord",
+				"vOrdr_year"
+			],
+			[
+				"wti",
+				"write"
+			],
+			[
+				"wor00",
+				"vWor00_wtyear"
+			],
+			[
+				"vcon",
+				"vCon_email"
+			],
+			[
+				"vwt",
+				"vWor00_wtyear"
+			],
+			[
+				"dim",
+				"Dim"
+			],
+			[
+				"sty",
+				"style	Attr"
+			],
+			[
+				"an",
+				"$animate	AngularJS"
+			],
+			[
+				"angular",
+				"angular.bind"
+			],
+			[
+				"the",
+				"then"
+			],
+			[
+				"if",
+				"If"
+			],
+			[
+				"end",
+				"End"
+			],
+			[
+				"ch",
+				"checkTime2"
+			],
+			[
+				"chec",
+				"checkTime1"
+			],
+			[
+				"che",
+				"checkTime1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "twss/main.py",
+			"settings":
+			{
+				"buffer_size": 891,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "twss1.sublime-project",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"last_filter": "pc",
+		"selected_items":
+		[
+			[
+				"pc",
+				"Package Control: Add Repository"
+			],
+			[
+				"pl",
+				"Package Control: List Packages"
+			],
+			[
+				"addre",
+				"Package Control: Add Repository"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"htmlp",
+				"HTMLPrettify"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htmlpr",
+				"HTMLPrettify"
+			],
+			[
+				"ssjava",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML5"
+			],
+			[
+				"ht",
+				"HTMLPrettify"
+			],
+			[
+				"ssj",
+				"Set Syntax: JSON"
+			],
+			[
+				"mb",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"lp",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"asp",
+				"Set Syntax: ASP"
+			],
+			[
+				"ss",
+				"Set Syntax: Python"
+			],
+			[
+				"ssc#",
+				"Set Syntax: C#"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"Package Contro",
+				"Package Control: Add Channel"
+			],
+			[
+				"liverel	",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"live",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"livere",
+				"LiveReload: Self test"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"htmlpre",
+				"HTMLPrettify"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"listpage",
+				"Package Control: List Packages"
+			],
+			[
+				"listp",
+				"Package Control: List Packages"
+			],
+			[
+				"listpa",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"lives",
+				"LiveStyle: Apply Patch"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mak",
+				"Set Syntax: Makefile"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"pageck",
+				"Package Control: List Packages"
+			],
+			[
+				"h",
+				"HTMLPrettify"
+			],
+			[
+				"inse",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"repo",
+				"Package Control: Add Repository"
+			],
+			[
+				"add repo",
+				"Package Control: Add Repository"
+			],
+			[
+				"htmlprettify",
+				"HTMLPrettify"
+			],
+			[
+				"prettu",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"pic",
+				"Package Control: List Packages"
+			],
+			[
+				"list page",
+				"Package Control: List Packages"
+			],
+			[
+				"P",
+				"Package Control: List Packages"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 496.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.run_command(\"htmlprettify\")",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Steny/TestProject/Python/twss"
+	],
+	"file_history":
+	[
+		"/E/Steny/TestProject/Python/twss/twss/build/bdist.win32/egg/urllib3/connectionpool.py",
+		"/E/Steny/Reference/grs/__init__.py",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142729.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142507.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 123030.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142316.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142636.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 122201.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 120850.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 122023.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 122540.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 122701.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 120607.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 120350.json",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/test.html",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 120521.json",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 120309.json",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/費用申請支單資料/demo.html",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/費用申請支單資料/匯入EXCEL.htm",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/tkpd10_io.asp",
+		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-05 100414.xml",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/BFM Workflow-soapui-project.xml",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/費用申請支單資料/css/ERPPD.css",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/費用申請支單資料/js/demo.js",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/Goto-CSS-Declaration/goto_css_declaration.sublime-settings",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/Goto-CSS-Declaration/Default (Windows).sublime-keymap",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/Default (Windows).sublime-keymap",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/HTMLPrettify/HTMLPrettify.sublime-settings",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/HTMLPrettify/Default (Windows).sublime-keymap",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/01.html",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_pnr.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_mail2.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/tppd20_d99_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/tppd20_d99.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/tppd20_21.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/INC/chkcomm.js",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/tppd20_25.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/tppd20_days.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/INC/jquery.tmpl.js",
+		"/E/Steny/Test/PttHtmlParser/index.html",
+		"//iis-erp3/Lionsys/Tkt/wtor01_pnr.asp",
+		"//iis-erp3/Lionsys/TC/tsxo00_pnr.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/tkpd10.asp",
+		"//iis-uerp/IIS/IIS-ERP/ErpDoc/開發/技術研究/9120908  Asp多筆樣板/README.md",
+		"//iis-erp3/Lionsys/Pub2/recm01_pnr.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/ordr00_orer_F79440.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/INC/chkVBright1.inc",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/pdrp75.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/pdrp75_rpt.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/tppd20_free.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/INC/jquery.tmpl.min.js",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsor01_add.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/INC/chkVBcomm1.inc",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_mail.asp",
+		"//iis-erp3/Lionsys/TC/tsor01_add.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/ordr08_tc.asp",
+		"//iis-erp3/Lionsys/Tour/ordr07.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/tkpr00_tax.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/xxxwtor01_d6_io.asp.bak",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/tkpr10.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_mail_io.asp",
+		"//iis-erp3/Lionsys/Mis9/mis098.asp",
+		"//iis-erp3/Lionsys/MisVB/Erplogin/Mism98C1.cls",
+		"//iis-erp/Lionsys/Tkt/fnex00.asp",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/wtor01_d_io.asp",
+		"//iis-erp/Lionsys/Tkt/wtor01_d.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/login.asp",
+		"//iis-erp3/Lionsys/TC/calendarXml.asp",
+		"/C/Users/stenyliu.LIONMAIL/Desktop/styles.css",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d3.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d32.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/ordr08.asp",
+		"//Iis-uerp2/iis/IIS-Web1.5-2/B2C/WebTK/App_Code/csWebtkcn01.vb",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsst00_d_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d6_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d6.asp",
+		"/E/Steny/Reference/tesseract/Samples/Tesseract.ConsoleDemo/Program.cs",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Pub/pub002.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tkt/wtor01_mail.asp",
+		"//iis-uerp2/iis/IIS-Web1.5-2/B2C/WebTK/web.config",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/TC/tstk53.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/TC/tstk52_io.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/TC/tstk52.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tkt/wtor01_mail_io.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/TC/tstk52_d.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/TC/tstk52_d_io.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tour/ordr08_tc.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tkt/wtor01_d6.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tkt/wtor01_d3.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tkt/wtor01_d32.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tour/ordr08.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d72_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d72.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_log.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d9_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/INC/hlpcomm.js",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/INC/chkEmail.inc",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Pub/pub004.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_bridge.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_apis.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Pub/pub00211.asp",
+		"/E/Steny/Technique/AngularJs/sample.html",
+		"/E/Steny/Technique/AngularJs/angular.min.js",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/stenyliu.LIONMAIL/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/FnIO/fnio02.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tstk52_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsop01_d.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01_d_io.asp",
+		"//iis-uerp/IIS/IIS-ERP/Lionsys/Tkt/wtor01_d6_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsop01_d_io.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/FnIO/fnio02_d.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/FnIO/fnio01_rpt.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsop01.asp",
+		"/E/Logs/20150323/20150403TSAKNH.json",
+		"/E/Steny/Python/Project/Calculate.py",
+		"//Iis-uerp2/iis/IIS-Web1.5-2/B2C/WebTK/Webtkse02.aspx.vb",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Mis/token_login.inc",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/ordr08_data2.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsor01_d.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/ordr00_add.asp",
+		"/E/Steny/Python/Project/Calculate",
+		"/E/Steny/Python/test.py",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01.asp",
+		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/pdor05_d.asp"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+			"",
+			"Sublime Text 3",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\\"cI\\\"",
+			"\\\"ca\\\"",
+			"\\\"ca",
+			"br",
+			"\\\"br",
+			"CreateTmpl",
+			"FunSetParent",
+			"openExcel",
+			"excel",
+			"hide",
+			"gide",
+			"hidden",
+			"CreateTmpl",
+			"fnCreate1",
+			"Fun_ListBox",
+			"size",
+			"\\.I",
+			"label",
+			"fnCreateTitleInvoice",
+			"invoiceField",
+			"theItem",
+			"detailItemField",
+			"btnAdd",
+			"detailItemTitle",
+			"Block_R",
+			"detailItemTitle",
+			"aa",
+			"KEY人名",
+			"tmpl-item",
+			"CreateTmpl",
+			"invoice",
+			"fnCreateTitleInvoice",
+			"item",
+			"fnCreate2",
+			"fnCreateTitleInvoice",
+			"var",
+			"fnCreateTitleInvoice",
+			"fnCreateTitle",
+			"detailItemField",
+			"detailItemTitle",
+			"fnCreate1",
+			"fnExpandItem",
+			"value",
+			"\\.INPUT",
+			"新增",
+			"Fun_ListBox",
+			"vRtid_seq",
+			"SubSetTkprm00",
+			"tPr00_rtidseq",
+			"SubSetTkprm00",
+			"tkprm00",
+			"vBg00_rtow",
+			"SubGetRtidSeq",
+			"vRtid_seq",
+			"vPd00_rtidseq",
+			"SubGetAddPrice2",
+			"SubGetFrontRtid",
+			"vRS1(\"pd70_expand_rt\")",
+			"SubGetFrontRtid",
+			"SubGetRtid",
+			"FunGetCityPrice",
+			"PD70_PRCSEQ",
+			"SubGetFrontData",
+			"SubCalleTicketMailCn",
+			"MSXML2.ServerXMLHTTP",
+			"SubCalleTicketMailCn",
+			"\\.png",
+			"getGdsApigetPnrInfo",
+			"getGdsApidoPnrTax",
+			"getGdsApigetPnrInfo",
+			"SubCreateTr3",
+			"FunDisplayPnrChangeAirline",
+			"SubCreateTr3",
+			"getGdsApigetPnrInfo",
+			"SubCreateTr3",
+			"FunDisplayPnrChangeAirline",
+			"fromCharCode",
+			"vWor02_desc",
+			"SubCreateTr2",
+			"tr2",
+			"vWor02_desc",
+			"getGdsApigetPnrInfo",
+			"Chr",
+			"vWor02_desc",
+			"tr2",
+			"vTitle",
+			"join",
+			"oin(vTitle",
+			"getGdsApigetPnrInfo",
+			"SubCreateTr2",
+			"vTitle",
+			"vEtit",
+			"SubGetTax2",
+			"getGdsApigetPnrInfo",
+			"SubGetTax2",
+			"getGdsApigetPnrInfo",
+			"SubGetAmaduesTax",
+			"for",
+			"vEtit",
+			"SubCreateTr2",
+			"getGdsApigetPnrInfo",
+			"SubGetAmaduesTax",
+			"FunDisplayPnrChangeAirline",
+			"alert",
+			"vLordr",
+			"\"BR\"",
+			"\"CI\"",
+			"\\\"CI\\\"",
+			"\\\"CX\\\"",
+			"SubGetFrontRtid",
+			"前延伸",
+			"response.write \"",
+			"response.write \"vRtid",
+			"response.write vRtid",
+			"tkprm00",
+			"update",
+			"vFlightPnr",
+			"vStstus",
+			"SubReceivePnr",
+			"sPd21_file",
+			"sPd21_name",
+			"Fun_CheckCode",
+			"maxLe",
+			"btnSend",
+			"addHighlightTextarea ",
+			"oTab",
+			"tdCreate",
+			"fnCreateDesc"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\"CX\"",
+			"\"BR\"",
+			"Sublime Text 3",
+			"",
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "twss/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								855,
+								855
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "twss1.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								390,
+								390
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.anaconda_documentation":
+	{
+		"height": 122.0
+	},
+	"output.exec":
+	{
+		"height": 128.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 122.0
+	},
+	"pinned_build_system": "",
+	"project": "twss1.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tppd20_25",
+				"tppd20_25.asp"
+			],
+			[
+				"days",
+				"tppd20_days.asp"
+			],
+			[
+				"_25",
+				"tppd20_25.asp"
+			],
+			[
+				"free",
+				"tppd20_free.asp"
+			],
+			[
+				"d99",
+				"tppd20_d99.asp"
+			],
+			[
+				"tppd20",
+				"tppd20_21.asp"
+			],
+			[
+				"ordr07_pnr",
+				"Tour\\ordr07_pnr.asp"
+			],
+			[
+				"wtor01_pnr",
+				"Tkt\\wtor01_pnr.asp"
+			],
+			[
+				"tsor01_add",
+				"TC\\tsor01_add.asp"
+			],
+			[
+				"wtor",
+				"wtor01_d.asp"
+			],
+			[
+				"wtor01_d",
+				"wtor01_d.asp"
+			],
+			[
+				"mail",
+				"wtor01_mail_io.asp"
+			],
+			[
+				"wtor01_mail",
+				"wtor01_mail.asp"
+			],
+			[
+				"mis98c",
+				"MisVB\\Erplogin\\Mism98C1.cls"
+			],
+			[
+				"mism98c1",
+				"MisVB\\Erplogin\\Mism98C1.cls"
+			],
+			[
+				"mis98",
+				"Mis9\\mis098.asp"
+			],
+			[
+				"ordr07_pn",
+				"Tour\\ordr07_pnr.asp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
