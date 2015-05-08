@@ -135,22 +135,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "twss/main.py",
-			"settings":
-			{
-				"buffer_size": 891,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "twss1.sublime-project",
-			"settings":
-			{
-				"buffer_size": 390,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -180,25 +164,9 @@
 	"command_palette":
 	{
 		"height": 368.0,
-		"last_filter": "pc",
+		"last_filter": "htmlp",
 		"selected_items":
 		[
-			[
-				"pc",
-				"Package Control: Add Repository"
-			],
-			[
-				"pl",
-				"Package Control: List Packages"
-			],
-			[
-				"addre",
-				"Package Control: Add Repository"
-			],
-			[
-				"instal",
-				"Package Control: Install Package"
-			],
 			[
 				"htmlp",
 				"HTMLPrettify"
@@ -245,6 +213,10 @@
 			],
 			[
 				"lp",
+				"Package Control: List Packages"
+			],
+			[
+				"pl",
 				"Package Control: List Packages"
 			],
 			[
@@ -450,8 +422,8 @@
 	],
 	"file_history":
 	[
-		"/E/Steny/TestProject/Python/twss/twss/build/bdist.win32/egg/urllib3/connectionpool.py",
-		"/E/Steny/Reference/grs/__init__.py",
+		"/E/Steny/TestProject/Python/twss/twss1.sublime-project",
+		"/E/Steny/Reference/grs/grsProject.sublime-project",
 		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142729.json",
 		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142507.json",
 		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 123030.json",
@@ -598,6 +570,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"test_stock_value",
+			"time",
+			"RealtimeTWSE",
+			"RealtimeStock",
+			"TWSE_CONNECTIONS",
+			"fetch_data",
+			"serial_fetch",
+			"RealtimeStock",
+			"fetch_data",
+			"serial_fetch",
+			"TSE_CONNECTIONS",
 			"\\\"cI\\\"",
 			"\\\"ca\\\"",
 			"\\\"ca",
@@ -714,18 +697,7 @@
 			"response.write vRtid",
 			"tkprm00",
 			"update",
-			"vFlightPnr",
-			"vStstus",
-			"SubReceivePnr",
-			"sPd21_file",
-			"sPd21_name",
-			"Fun_CheckCode",
-			"maxLe",
-			"btnSend",
-			"addHighlightTextarea ",
-			"oTab",
-			"tdCreate",
-			"fnCreateDesc"
+			"vFlightPnr"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -748,68 +720,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "twss/main.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 891,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								855,
-								855
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "twss1.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								390,
-								390
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],

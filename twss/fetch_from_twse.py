@@ -7,10 +7,12 @@ import urllib3
 from datetime import datetime
 import ujson as json
 from ujson import loads
+import logging
 
 TSE_URL = 'http://mis.twse.com.tw/'
 TSE_CONNECTIONS = urllib3.connection_from_url(TSE_URL)
 TWSE_PATH = '/stock/api/getStockInfo.jsp?ex_ch={ex_ch}&json=1&delay={delay}'
+logger = logging.getLogger(__name__)
 
 class QuoteStock(object):
     """docstring for Stock"""
@@ -28,6 +30,8 @@ class QuoteStock(object):
     def fetch_data(self):
         param = self.prepareParam()
         self.result = TSE_CONNECTIONS.urlopen('GET', TWSE_PATH.format(**param)).data
+        logger.info(self.result)
+
     @property
     def data(self):
         self.fetch_data()
@@ -106,4 +110,3 @@ class Stock(object):
     @property
     def range(self):
         return self._range
-

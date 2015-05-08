@@ -4,6 +4,8 @@ from datetime import datetime
 from types import BooleanType
 from types import NoneType
 import twss 
+import logging
+import logging.config
 
 class TestTwss(unittest.TestCase):
     '''
@@ -36,6 +38,13 @@ class TestTwss(unittest.TestCase):
     def test_twse_no(self):
         datas = self.__get_data()
         assert len(datas) == 5
+#set logger
+def main():
+    logging.basicConfig(level=logging.WARNING)
+    logging.config.fileConfig("logging.conf", disable_existing_loggers=False)
+    #logger = logging.getLogger( __name__ )
 
 if __name__ == '__main__':
+    main()
     unittest.main()
+
