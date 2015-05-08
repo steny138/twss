@@ -32,18 +32,18 @@ def fetch_twse_list():
     #replace_pattern = regex.sub("interfaceOpDataFile %s" % fileIn, line)
     #抓所有股票
     for no in csv.DictReader(f):
+        print TWSEURL % no['code']
         page = TSE_CONNECTIONS.urlopen('GET',TWSEURL % no['code'])
         htmlDoc = etree.HTML(page.data.lower())
         stockList = htmlDoc.xpath(u"//*[@id=\"tbl-containerx\"]/table/tbody/tr")
 
         for t in stockList:
-            print t.text
             #抓class != digit
-            #tds = t.xpath("td[not(contains(@class, 'digit'))]")
-            #print(tds[1].text)
-            #print(tds[2].text)
-            #print(tds[5].text)
-            #print(tds[6].text)
+            tds = t.xpath("td[not(contains(@class, 'digit'))]")
+            if len(tds) > 2:
+                print(tds[1].text)
+                print(tds[2].text)
+            
 
 
     '''
