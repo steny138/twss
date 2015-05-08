@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"wa",
+				"WARNING	statement"
+			],
+			[
+				"Inf",
+				"INFO	statement"
+			],
+			[
 				"html",
 				"html5	Simple HTML5 Boilerplate"
 			],
@@ -135,6 +143,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "logs/fetch.log",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "twss/__init__.py",
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -422,7 +446,15 @@
 	],
 	"file_history":
 	[
+		"/E/Steny/TestProject/Python/twss/logs/fetch.log",
+		"/E/Steny/TestProject/Python/twss/20150508.log",
+		"/E/Steny/TestProject/Python/twss/twss/fetch_from_twse.py",
+		"/E/Steny/TestProject/Python/twss/test_unittest.py",
+		"/E/Steny/TestProject/Python/twss/logging.conf",
+		"/E/Steny/TestProject/Python/twss/logs/perft.log.2015-05-08_10-27-46",
+		"/E/Steny/TestProject/Python/twss/logs/perft.log",
 		"/E/Steny/TestProject/Python/twss/twss1.sublime-project",
+		"/C/Python27/Lib/logging/handlers.py",
 		"/E/Steny/Reference/grs/grsProject.sublime-project",
 		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142729.json",
 		"/E/Steny/TestProject/BargainFinderMax_Test/BargainFinderMax_Test/bin/Debug/logs/2015-05-06 142507.json",
@@ -541,19 +573,11 @@
 		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsop01.asp",
 		"/E/Logs/20150323/20150403TSAKNH.json",
 		"/E/Steny/Python/Project/Calculate.py",
-		"//Iis-uerp2/iis/IIS-Web1.5-2/B2C/WebTK/Webtkse02.aspx.vb",
-		"//Iis-uerp/iis/IIS-ERP/Lionsys/Mis/token_login.inc",
-		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/ordr08_data2.asp",
-		"//Iis-uerp/iis/IIS-ERP/Lionsys/TC/tsor01_d.asp",
-		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/ordr00_add.asp",
-		"/E/Steny/Python/Project/Calculate",
-		"/E/Steny/Python/test.py",
-		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tkt/wtor01.asp",
-		"//Iis-uerp/iis/IIS-ERP/Lionsys/Tour/pdor05_d.asp"
+		"//Iis-uerp2/iis/IIS-Web1.5-2/B2C/WebTK/Webtkse02.aspx.vb"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 55.0
 	},
 	"find_in_files":
 	{
@@ -570,6 +594,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"handler_nullHandler",
+			"logger",
+			"print",
+			"console",
+			"timedRotatingFormatter",
+			"data",
+			"logger",
+			"data",
+			"fetch_data",
 			"test_stock_value",
 			"time",
 			"RealtimeTWSE",
@@ -688,16 +721,7 @@
 			"vLordr",
 			"\"BR\"",
 			"\"CI\"",
-			"\\\"CI\\\"",
-			"\\\"CX\\\"",
-			"SubGetFrontRtid",
-			"前延伸",
-			"response.write \"",
-			"response.write \"vRtid",
-			"response.write vRtid",
-			"tkprm00",
-			"update",
-			"vFlightPnr"
+			"\\\"CI\\\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -720,8 +744,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "logs/fetch.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "twss/__init__.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -762,7 +845,7 @@
 	},
 	"output.exec":
 	{
-		"height": 128.0
+		"height": 146.0
 	},
 	"output.find_results":
 	{
@@ -882,7 +965,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 192.0,
+	"side_bar_width": 272.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
