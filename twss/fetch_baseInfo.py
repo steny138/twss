@@ -1,88 +1,170 @@
 #-*- coding: utf-8 -*-
+#股票基本資料
 
-import csv
 import logging
-import random
+import urllib
 import urllib3
 from datetime import datetime
 import ujson as json
 from ujson import loads
-import logging
-import re
 from lxml import etree
 
-
+import os
 import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
-
-NOW = datetime(2014, 7, 3)
-SAVEPATH = '../twss/twse_list.csv'
-CODEPATH= 'industry_code.csv'
-
-TWSEURL = 'http://www.twse.com.tw/ch/trading/exchange/MI_INDEX/MI_INDEX2_print.php?genpage=genpage/Report%(year)s%(mon)02d/A112%(year)s%(mon)02d%(day)02d%%s.php&type=html' % {'year': NOW.year, 'mon': NOW.month, 'day': NOW.day} 
-TSE_CONNECTIONS = urllib3.connection_from_url(TWSEURL)
-
-def fetch_twse_list():
-   
-    f = open(CODEPATH, 'r')
-    all_items = []
-    re_pattern = re.compile(r'".*"')
-    p_pattern = re.compile(ur'.*:.*\n')
-    #replace_pattern = regex.sub("interfaceOpDataFile %s" % fileIn, line)
-    #抓所有股票
-    for no in csv.DictReader(f):
-        print TWSEURL % no['code']
-        page = TSE_CONNECTIONS.urlopen('GET',TWSEURL % no['code'])
-        htmlDoc = etree.HTML(page.data.lower())
-        stockList = htmlDoc.xpath(u"//*[@id=\"tbl-containerx\"]/table/tbody/tr")
-
-        for t in stockList:
-            #抓class != digit
-            tds = t.xpath("td[not(contains(@class, 'digit'))]")
-            if len(tds) > 2:
-                print(tds[1].text)
-                print(tds[2].text)
-            
+logger = logging.getLogger(__name__)
 
 
-    '''
-    for no in csv.DictReader(f):
-        print TWSEURL % no['code']
-        response = TSE_CONNECTIONS.urlopen('GET',TWSEURL % no['code'])
-        responseStr = re_pattern.sub('',response.data.decode('CP950'))
-
-        responseStr = p_pattern.sub('', responseStr)
-
-        responseStr = responseStr.strip().decode("utf-8")
-        f2 = open('twse_list_test.csv', 'w+') 
-        f2.write(responseStr)
-        break;
-
-    f3 = open('../twss/twse_list_test.csv', 'r')
-    for t in csv.DictReader(f3): 
-        print t
-    '''
-    '''
-    print responseStr
-    for key in csv.DictReader(responseStr): 
-        print key.keys()
-    break;
-
-    '''
-    #寫入csv
-    '''
-    with open(SAVEPATH, 'w') as files:
-        csv_file = csv.writer(files)
-        #csv_file.writerow(['文件更新', datetime.now().strftime('%Y-%m-%d %H:%M:%S'), 'x', 'x'])
-        csv_file.writerow(['UPDATE', datetime.now().strftime('%Y/%m/%d'), 'x', 'x'])
-        csv_file.writerow(['證期會代碼', '公司簡稱', '分類代碼', '分類名稱'])
-        for i in sorted(all_items):
-            csv_file.writerow(all_items[i])
-    '''
+INFO_URL = "http://mops.twse.com.tw/"
+INFO_PATH = "/mops/web/ajax_t05st03"
+INFO_CONNECTIONS = urllib3.connection_from_url(INFO_URL)
 
 
+class StockInfo(object):
+    """查詢股票基本資料用"""
+    def __init__(self, no):
+        super(StockInfo, self).__init__()
+        self.no = no
+        self.__fetch_stockInfo()
 
-if __name__ == '__main__':
-    fetch_twse_list()
+    def __fetch_stockInfo(self):
+        field = {'firstin': '1', 'co_id': self.no}
+        d = urllib.urlencode(field)
+        page = INFO_CONNECTIONS.urlopen('POST', INFO_PATH, d)
+        self.result = page.data
+
+    def __translateModel(self):
+        hparser = etree.HTMLParser(encoding='utf-8')
+        html = etree.HTML(self.result, hparser)
+
+        logger.debug(etree.tostring(html))
+
+        #開始讀取
+        #先抓 stock_no
+        infoTrs = html.xpath(u"//body/table[2]/tr")
+        if infoTrs:
+            firstTr = infoTrs[0].xpath(u"td")
+            if firstTr:
+                try:
+                    #29
+                    #26
+                    AddRowNum = 0
+                    if len(infoTrs) > 26:
+                        AddRowNum = 3
+
+                    no =firstTr[0].text
+                    result = Info()
+                    result._no = no
+
+                    result._type = firstTr[1].text.encode('utf-8').strip()
+                    
+                    result._cFullname = infoTrs[1].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result._callPhone = infoTrs[1].xpath(u"td")[1].text.encode('utf-8').strip()
+
+                    result._address = infoTrs[2].xpath(u"td")[0].text.encode('utf-8').strip()
+
+                    result._chairman = infoTrs[3].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result._manager = infoTrs[3].xpath(u"td")[1].text.encode('utf-8').strip()
+
+
+                    result._idno = infoTrs[7+AddRowNum].xpath(u"td")[1].text.encode('utf-8').strip()
+
+                    result._capital = infoTrs[8+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    #result._startDate = infoTrs[8].xpath(u"td")[1].text.encode('utf-8').strip()
+
+                    
+                    result._ename = infoTrs[19+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    
+                    result._eFullname = infoTrs[20+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    
+
+                    result._fax = infoTrs[22+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result._email = infoTrs[22+AddRowNum].xpath(u"td")[1].text.encode('utf-8').strip()
+
+                    result._webUrl = infoTrs[23+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+
+                    logger.info('{0}/{1}'.format(result.cFullname, result.capital))
+
+                    return result
+                except Exception, e:
+                    exc_type, exc_obj, exc_tb = sys.exc_info()
+                    fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                    #raise e
+                    logger.warning('轉換股票基本資料發生錯誤 {0} -- in : {1}, {2}'.format(str(e),fname, exc_tb.tb_lineno))
+        return None           
+        #return new Info();
+    @property
+    def data(self):
+        return self.__translateModel()
+        #return __translateModel()
     
+
+class Info(object):
+    def __init__(self):
+        self._type = ''
+        self._name = ''
+        self._address = ''
+        self._callPhone = ''
+        self._chairman = ''
+        self._manager = ''
+        self._startDate = ''
+        self._idno = ''
+        self._capital = ''
+        self._cFullname = ''
+        self._ename = ''
+        self._eFullname = ''
+        self._fax = ''
+        self._webUrl = ''
+        self._no = ''
+    @property
+    def no(self):       #代號
+        return  self._no
+
+    @property
+    def type(self):       #行業別
+        return  self._type
+
+    @property
+    def cname(self):    #中文簡稱
+        return self._name
+
+    @property
+    def address(self):  #中文地址
+        return self._address
+
+    @property
+    def callPhone(self):    #公司電話
+        return self._callPhone
+
+    @property
+    def chairman(self):     #董事長
+        return self._chairman
+    
+    @property
+    def manager(self):      #總經理
+        return self._manager
+    @property
+    def startDate(self):    #上市日期
+        return self._startDate
+
+    @property
+    def idno(self):         #統一編號
+        return self._idno
+    @property
+    def capital(self):      #資本額
+        return self._capital
+    @property
+    def cFullname(self):    #中文全稱
+        return self._cFullname
+    @property
+    def ename(self):        #英文簡稱
+        return self._ename
+    @property
+    def eFullname(self):    #英文全稱
+        return self._eFullname
+    @property
+    def fax(self):          #傳真
+        return self._fax
+    @property
+    def webUrl(self):       #網址
+        return self._webUrl
+

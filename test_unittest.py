@@ -34,10 +34,22 @@ class TestTwss(unittest.TestCase):
         self.datas = twss.fetch_from_twse.QuoteStock('2330;3257;0050;0056;2731', datetime.now()).data
         return self.datas
 
-    #@staticmethod
+    @unittest.skip("testing skipping")
     def test_twse_no(self):
+        #不是開市日就不用測了...一定不會過的
         datas = self.__get_data()
         assert len(datas) == 5
+
+
+    #@unittest.skip("testing skipping")
+    def test_twse_list(self):
+        r = twss.fetch_stockNumber.fetch_twse_list(1)
+        assert r == "connect ok"
+
+    def test_base_info(self):
+        data = twss.fetch_baseInfo.StockInfo('2330').data
+        assert data.no == '2330'
+        
 #set logger
 def main():
     logging.basicConfig(level=logging.WARNING)

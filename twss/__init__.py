@@ -1,1 +1,3 @@
 import fetch_from_twse
+import fetch_baseInfo
+import fetch_stockNumber

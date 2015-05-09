@@ -1,4 +1,7 @@
 #-*- coding: utf-8 -*-
+#查詢即時股價
+#若是查詢日休市,則取不到資料
+
 
 import csv
 import logging
@@ -7,14 +10,13 @@ import urllib3
 from datetime import datetime
 import ujson as json
 from ujson import loads
-import logging
 
 TSE_URL = 'http://mis.twse.com.tw/'
 TSE_CONNECTIONS = urllib3.connection_from_url(TSE_URL)
 TWSE_PATH = '/stock/api/getStockInfo.jsp?ex_ch={ex_ch}&json=1&delay={delay}'
 logger = logging.getLogger(__name__)
 
-class QuoteStock(object):
+class QuoteStock(object): #Quote-報價
     """docstring for Stock"""
     def __init__(self, no, date, delay=0):
         self.no = no
@@ -86,6 +88,7 @@ class Stock(object):
     @property
     def name(self):
         return self._name
+
     @property
     def fullname(self):
         return self._fullname
