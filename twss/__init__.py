@@ -1,3 +1,4 @@
 import fetch_from_twse
 import fetch_baseInfo
 import fetch_stockNumber
+import fetch_stock_per_month

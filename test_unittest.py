@@ -40,7 +40,6 @@ class TestTwss(unittest.TestCase):
         datas = self.__get_data()
         assert len(datas) == 5
 
-
     #@unittest.skip("testing skipping")
     def test_twse_list(self):
         r = twss.fetch_stockNumber.fetch_twse_list(1)
@@ -49,6 +48,10 @@ class TestTwss(unittest.TestCase):
     def test_base_info(self):
         data = twss.fetch_baseInfo.StockInfo('2330').data
         assert data.no == '2330'
+
+    def test_stock_history_amount(self):
+        data = twss.fetch_stock_per_month.QuoteStockPerMonth('2330', 2015, 3, 1).data
+        assert len(data) == 37
         
 #set logger
 def main():
