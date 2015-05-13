@@ -53,34 +53,34 @@ class StockInfo(object):
 
                     no =firstTr[0].text
                     result = Info()
-                    result._no = no
+                    result.no = no
 
-                    result._type = firstTr[1].text.encode('utf-8').strip()
+                    result.type = firstTr[1].text.encode('utf-8').strip()
                     
-                    result._cFullname = infoTrs[1].xpath(u"td")[0].text.encode('utf-8').strip()
-                    result._callPhone = infoTrs[1].xpath(u"td")[1].text.encode('utf-8').strip()
+                    result.cFullname = infoTrs[1].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.callPhone = infoTrs[1].xpath(u"td")[1].text.encode('utf-8').strip()
 
-                    result._address = infoTrs[2].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.address = infoTrs[2].xpath(u"td")[0].text.encode('utf-8').strip()
 
-                    result._chairman = infoTrs[3].xpath(u"td")[0].text.encode('utf-8').strip()
-                    result._manager = infoTrs[3].xpath(u"td")[1].text.encode('utf-8').strip()
+                    result.chairman = infoTrs[3].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.manager = infoTrs[3].xpath(u"td")[1].text.encode('utf-8').strip()
 
 
-                    result._idno = infoTrs[7+AddRowNum].xpath(u"td")[1].text.encode('utf-8').strip()
+                    result.idno = infoTrs[7+AddRowNum].xpath(u"td")[1].text.encode('utf-8').strip()
 
-                    result._capital = infoTrs[8+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.capital = infoTrs[8+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
                     #result._startDate = infoTrs[8].xpath(u"td")[1].text.encode('utf-8').strip()
 
                     
-                    result._ename = infoTrs[19+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.ename = infoTrs[19+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
                     
-                    result._eFullname = infoTrs[20+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.eFullname = infoTrs[20+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
                     
 
-                    result._fax = infoTrs[22+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
-                    result._email = infoTrs[22+AddRowNum].xpath(u"td")[1].text.encode('utf-8').strip()
+                    result.fax = infoTrs[22+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.email = infoTrs[22+AddRowNum].xpath(u"td")[1].text.encode('utf-8').strip()
 
-                    result._webUrl = infoTrs[23+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
+                    result.webUrl = infoTrs[23+AddRowNum].xpath(u"td")[0].text.encode('utf-8').strip()
 
                     logger.info('{0}/{1}'.format(result.cFullname, result.capital))
 
@@ -100,71 +100,19 @@ class StockInfo(object):
 
 class Info(object):
     def __init__(self):
-        self._type = ''
-        self._name = ''
-        self._address = ''
-        self._callPhone = ''
-        self._chairman = ''
-        self._manager = ''
-        self._startDate = ''
-        self._idno = ''
-        self._capital = ''
-        self._cFullname = ''
-        self._ename = ''
-        self._eFullname = ''
-        self._fax = ''
-        self._webUrl = ''
-        self._no = ''
-    @property
-    def no(self):       #代號
-        return  self._no
-
-    @property
-    def type(self):       #行業別
-        return  self._type
-
-    @property
-    def cname(self):    #中文簡稱
-        return self._name
-
-    @property
-    def address(self):  #中文地址
-        return self._address
-
-    @property
-    def callPhone(self):    #公司電話
-        return self._callPhone
-
-    @property
-    def chairman(self):     #董事長
-        return self._chairman
+        self.type = ''     #行業別
+        self.name = ''     #中文簡稱
+        self.address = ''  #中文地址
+        self.callPhone = ''#公司電話
+        self.chairman = '' #董事長
+        self.manager = ''  #總經理
+        self.startDate = ''#上市日期
+        self.idno = ''     #統一編號
+        self.capital = ''  #資本額
+        self.cFullname = ''#中文全稱
+        self.ename = ''    #英文簡稱
+        self.eFullname = ''#英文全稱
+        self.fax = ''      #傳真
+        self.webUrl = ''   #網址
+        self.no = ''       #代號
     
-    @property
-    def manager(self):      #總經理
-        return self._manager
-    @property
-    def startDate(self):    #上市日期
-        return self._startDate
-
-    @property
-    def idno(self):         #統一編號
-        return self._idno
-    @property
-    def capital(self):      #資本額
-        return self._capital
-    @property
-    def cFullname(self):    #中文全稱
-        return self._cFullname
-    @property
-    def ename(self):        #英文簡稱
-        return self._ename
-    @property
-    def eFullname(self):    #英文全稱
-        return self._eFullname
-    @property
-    def fax(self):          #傳真
-        return self._fax
-    @property
-    def webUrl(self):       #網址
-        return self._webUrl
-

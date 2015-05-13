@@ -45,16 +45,16 @@ class QuoteStock(object): #Quote-報價
         if result['rtcode'] == '0000':
             for msg in result['msgArray']:
                 stock = Stock(self.no)
-                stock._no = msg['c']
-                stock._name = msg['n'].encode('utf-8')
-                stock._fullname = msg['nf'].encode('utf-8')
-                stock._oPrice = msg['o']
-                stock._lPrice = msg['l']
-                stock._hPrice = msg['h']
-                stock._fPrice = msg['z']
-                stock._num = msg['tv']
-                stock._yPrice = msg['y']
-                stock._range = msg['n']
+                stock.no = msg['c']
+                stock.name = msg['n'].encode('utf-8')
+                stock.fullname = msg['nf'].encode('utf-8')
+                stock.oPrice = msg['o']
+                stock.lPrice = msg['l']
+                stock.hPrice = msg['h']
+                stock.fPrice = msg['z']
+                stock.num = msg['tv']
+                stock.yPrice = msg['y']
+                stock.range = msg['n']
                 stockList.append(stock)
                 
         else :
@@ -71,45 +71,13 @@ class QuoteStock(object): #Quote-報價
     
 class Stock(object):
     def __init__(self, no):
-        self._name = ''
-        self._fullname = ''
-        self._oPrice = ''
-        self._lPrice = ''
-        self._hPrice = ''
-        self._fPrice = ''
-        self._yPrice = ''
-        self._num = ''
-        self._range = ''
-        self._no = no
-    @property
-    def no(self):
-        return  self._no
-
-    @property
-    def name(self):
-        return self._name
-
-    @property
-    def fullname(self):
-        return self._fullname
-    @property
-    def oPrice(self):
-        return self._oPrice
-    @property
-    def lPrice(self):
-        return self._lPrice
-    @property
-    def hPrice(self):
-        return self._hPrice
-    @property
-    def fPrice(self):
-        return self._fPrice
-    @property
-    def num(self):
-        return self._num
-    @property
-    def yPrice(self):
-        return self._yPrice
-    @property
-    def range(self):
-        return self._range
+        self.name = ''
+        self.fullname = ''
+        self.oPrice = ''
+        self.lPrice = ''
+        self.hPrice = ''
+        self.fPrice = ''
+        self.yPrice = ''
+        self.num = ''
+        self.range = ''
+        self.no = no

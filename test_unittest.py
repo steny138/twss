@@ -34,7 +34,7 @@ class TestTwss(unittest.TestCase):
         self.datas = twss.fetch_from_twse.QuoteStock('2330;3257;0050;0056;2731', datetime.now()).data
         return self.datas
 
-    @unittest.skip("testing skipping")
+    #@unittest.skip("testing skipping")
     def test_twse_no(self):
         #不是開市日就不用測了...一定不會過的
         datas = self.__get_data()
